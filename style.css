@@ -34,9 +34,9 @@ body {
   background-color: rgb(202, 196, 196);
   position: relative;
   left: -40vw;
-  top: 10.4vh;
+  top: 8.65vh;
   min-width: 40vw;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .right-side {
@@ -46,28 +46,73 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
-  background-color: rgb(202, 196, 196);
   margin: 0;
+}
+.right-side,
+.footer {
+  background-color: rgb(236, 234, 234);
 }
 
 .header {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .signup_form_container,
 .footer {
   margin-left: -1.38vw;
   padding-left: 1.38vw;
-  background-color: white;
   height: 100vh;
+}
+
+.signup_form_container {
+  background-color: white;
+  box-shadow: 0px 3px 50px rgb(199, 198, 198);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 fieldset {
   display: block;
-  margin-left: -0.96vw;
+  margin-left: -0.8vw;
+  /* margin-right: -0.8vw; */
   border-style: none;
+}
+input {
+  border-style: solid;
+  border-radius: 4px;
+}
+/* remove arrows from phone(number) fields */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .input_container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+}
+
+:invalid {
+  border-color: red;
+}
+
+.footer {
+  margin-top: 3px;
+  padding-top: 20px;
+}
+
+button {
+  background-color: rgba(66, 73, 57, 255);
+  border-radius: 8px;
+  border-style: none;
+  color: rgb(236, 234, 234);
+}
+a:link,
+a:visited {
+  color: rgba(66, 73, 57, 255);
+  text-decoration: none;
 }

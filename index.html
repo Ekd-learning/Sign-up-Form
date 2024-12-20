@@ -55,7 +55,13 @@
           <div class="input_container">
             <div class="label_input_container">
               <label for="password">Password<br /></label>
-              <input type="password" id="password" name="password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="5"
+                maxlength="20"
+              />
             </div>
             <div class="label_input_container">
               <label for="confirmed_password">Confirm Password<br /></label>
@@ -63,6 +69,8 @@
                 type="password"
                 id="confirmed_password"
                 name="confirmed_password"
+                minlength="5"
+                maxlength="20"
               />
             </div>
           </div>
