@@ -7,9 +7,73 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="image_&_logo_container"></div>
-    <div class="header"></div>
-    <div class="signup_form_container"></div>
-    <div class="footer"></div>
+    <div class="left-side">
+      <img clas="background-pic" src="./pic.png" width="100%" height="100%" />
+      <img
+        class="logo"
+        src="./Logo_transparent.png"
+        width="100%"
+        height="20%"
+      />
+    </div>
+    <div class="right-side">
+      <div class="header">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.<br />
+          Sign up <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="signup_form_container">
+        <p>Let's do this!</p>
+        <fieldset>
+          <div class="input_container">
+            <div class="label_input_container">
+              <label for="first_name">First Name<br /></label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div class="label_input_container">
+              <label for="last_name">Last Name<br /></label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="input_container">
+            <div class="label_input_container">
+              <label for="email">Email<br /></label>
+              <input type="email" id="email" , name="email" />
+            </div>
+            <div class="label_input_container">
+              <label for="phone_number">Phone Number<br /></label>
+              <input type="number" id="phone_number" name="phone_number" />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="input_container">
+            <div class="label_input_container">
+              <label for="password">Password<br /></label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="label_input_container">
+              <label for="confirmed_password">Confirm Password<br /></label>
+              <input
+                type="password"
+                id="confirmed_password"
+                name="confirmed_password"
+              />
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="footer">
+        <button type="submit">Create Account</button>
+        <p class="login_text">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
